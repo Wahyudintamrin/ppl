@@ -1,0 +1,1 @@
+Letakkan file PDF/dokumen di sini, lalu isi alamatnya pada kolom link di js/app.js, contoh: artefak/dokumen/rpp-siklus1.pdf
