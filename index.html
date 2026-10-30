@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id" data-look="klasik">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<title>E-Portofolio PPL Mandiri – Wahyudin, S.Pd</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="bg" aria-hidden="true"><span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span><span class="ring r1"></span><span class="ring r2"></span><span class="ring r3"></span></div>
+<header><div class="bar"><div class="brand">E-Portofolio PPG</div><nav id="nav"></nav><div class="looks" role="group" aria-label="Pilih tampilan"><button data-look="klasik" title="Tampilan Kaca" aria-label="Tampilan Kaca"></button><button data-look="minimal" title="Tampilan Minimal" aria-label="Tampilan Minimal"></button><button data-look="navy" title="Tampilan Biru Tua" aria-label="Tampilan Biru Tua"></button></div><button class="theme" id="theme" aria-label="Ganti tema">◐</button><button class="burger" id="burger" aria-label="Buka menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button></div></header>
+<main>
+
+<section class="page" id="beranda">
+  <div class="hero">
+    <div>
+      <h1>E-Portofolio Praktik Pengalaman Lapangan Mandiri</h1>
+      <p class="sub">Pendidikan Profesi Guru &mdash; Wahyudin, S.Pd</p>
+      <div class="motto" id="motto">“Mengajar dengan hati, membimbing dengan teladan, menumbuhkan generasi yang berkarakter dan berdaya saing.”<small>Wahyudin, S.Pd</small></div>
+      <button class="go" data-go="profil">Lihat profil</button>
+    </div>
+    <div class="stage"><span class="orbit"></span><span class="orbit o2"></span><span class="chip c1">📚</span><span class="chip c2">🎓</span><span class="chip c3">✏️</span>
+    <div class="frame" id="heroPhoto" title="Klik untuk memasang foto" tabindex="0" role="button" aria-label="Pasang foto">
+      <img alt="Foto Wahyudin, S.Pd"><div class="ph"><b>W</b>Klik untuk memasang foto</div>
+    </div></div>
+  </div>
+</section>
+
+<section class="page" id="profil">
+  <h2>Profil</h2><p class="lead">Identitas peserta PPG dan pihak yang mendampingi selama PPL.</p>
+  <div class="card profile">
+    <div class="pn">
+      <div class="avatar" id="avatar" title="Klik untuk memasang foto" tabindex="0" role="button" aria-label="Pasang foto profil"><img alt="Foto profil"><div class="ph"><b>W</b>Pasang foto</div></div>
+      <h3>Wahyudin, S.Pd</h3><p>Mahasiswa PPG</p>
+    </div>
+    <dl id="info"></dl>
+  </div>
+</section>
+
+<section class="page" id="terbimbing">
+  <h2>Praktik Terbimbing</h2><p class="lead">Refleksi mata kuliah dari praktik mengajar mandiri.</p>
+  <div class="grid" id="g-terbimbing"></div>
+</section>
+
+<section class="page" id="uts">
+  <h2>Ujian Tengah Semester</h2><p class="lead">Produk terbaik dari praktik mengajar mandiri siklus 1.</p>
+  <div class="grid" id="g-uts"></div>
+</section>
+
+<section class="page" id="uas">
+  <h2>Ujian Akhir Semester</h2><p class="lead">Produk terbaik dari praktik mengajar mandiri siklus 2 sampai 4.</p>
+  <div class="grid" id="g-uas"></div>
+</section>
+
+<section class="page" id="rtl">
+  <h2>Rencana Tindak Lanjut</h2><p class="lead">Langkah perbaikan dan pengembangan setelah PPL berakhir.</p>
+  <div class="card rtl" id="rtlBox"></div>
+  <div class="grid" id="g-rtl" style="margin-top:20px"></div>
+</section>
+
+<section class="page" id="dokumentasi">
+  <h2>Dokumentasi</h2><p class="lead">Foto kegiatan PPL. Klik kotak tambah untuk memilih foto dari perangkat.</p>
+  <div class="grid" id="g-dok" style="margin-bottom:24px"></div>
+  <div class="gal" id="gal"><figure class="add" id="addPhoto" tabindex="0" role="button">+ Tambah foto</figure></div>
+</section>
+
+</main>
+<footer>© 2026 Wahyudin, S.Pd &middot; E-Portofolio PPL Mandiri</footer>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="mt">
+  <div class="box">
+    <div class="mh"><h3 id="mt"></h3><button class="x" id="close" aria-label="Tutup">✕</button></div>
+    <div class="mb" id="mb"></div>
+    <div class="mf">
+      <div class="row"><input type="url" id="lnk" placeholder="Tempel tautan Google Drive atau YouTube"><button class="btn2" id="saveLnk">Simpan tautan</button></div>
+      <div class="row"><label class="btn2" for="up" style="cursor:pointer">Pilih file dari perangkat</label><input type="file" id="up" accept="application/pdf,video/*,image/*" hidden><a class="btn2" id="ext" href="#" target="_blank" rel="noopener" style="text-decoration:none;display:none">Buka di tab baru</a></div>
+    </div>
+  </div>
+</div>
+<input type="file" id="photoIn" accept="image/*" hidden>
+<input type="file" id="galIn" accept="image/*" multiple hidden>
+
+<script src="js/app.js"></script>
+</body>
+</html>

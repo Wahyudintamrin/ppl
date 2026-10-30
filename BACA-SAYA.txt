@@ -1,0 +1,20 @@
+E-PORTOFOLIO PPL MANDIRI PPG - Wahyudin, S.Pd
+
+Struktur folder
+  index.html        halaman utama (buka dengan browser)
+  css/style.css     tampilan dan animasi
+  js/app.js         data (CONFIG, SECTIONS) dan fungsi
+  images/           foto profil, foto kegiatan, ikon
+  artefak/dokumen/  file dokumen (PDF)
+  artefak/video/    file video
+
+Cara mengisi
+1. Buka js/app.js, ubah CONFIG (motto, HP, alamat, LPTK, lokasi PPL).
+2. Salin file ke artefak/dokumen atau artefak/video.
+3. Pada SECTIONS, isi kolom link, contoh: link:"artefak/dokumen/rpp-siklus1.pdf"
+   Tautan Google Drive atau YouTube juga bisa.
+4. Foto: simpan sebagai images/foto-profil.jpg.
+
+5. Tombol tiga bulatan di pojok atas memilih tampilan: Kaca, Minimal, Biru Tua.
+
+Untuk online, unggah seluruh folder ke hosting statis (GitHub Pages, Netlify, dll).
