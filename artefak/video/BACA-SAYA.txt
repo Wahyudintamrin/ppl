@@ -1,0 +1,1 @@
+Letakkan video (mp4/webm) di sini, lalu isi alamatnya pada kolom link di js/app.js, contoh: artefak/video/siklus1.mp4. Untuk video besar, disarankan memakai tautan YouTube.
