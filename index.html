@@ -10,7 +10,7 @@
 </head>
 <body>
 <div class="bg" aria-hidden="true"><span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span><span class="ring r1"></span><span class="ring r2"></span><span class="ring r3"></span></div>
-<header><div class="bar"><div class="brand">E-Portofolio PPG</div><nav id="nav"></nav><div class="looks" role="group" aria-label="Pilih tampilan"><button data-look="klasik" title="Tampilan Kaca" aria-label="Tampilan Kaca"></button><button data-look="minimal" title="Tampilan Minimal" aria-label="Tampilan Minimal"></button><button data-look="navy" title="Tampilan Biru Tua" aria-label="Tampilan Biru Tua"></button></div><button class="theme" id="theme" aria-label="Ganti tema">◐</button><button class="burger" id="burger" aria-label="Buka menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button></div></header>
+<header><div class="bar"><div class="brand">E-Portofolio PPG</div><nav id="nav"></nav><button class="theme" id="theme" aria-label="Ganti tema">◐</button><button class="burger" id="burger" aria-label="Buka menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button></div></header>
 <main>
 
 <section class="page" id="beranda">
@@ -21,7 +21,7 @@
       <div class="motto" id="motto">“Mengajar dengan hati, membimbing dengan teladan, menumbuhkan generasi yang berkarakter dan berdaya saing.”<small>Wahyudin, S.Pd</small></div>
       <button class="go" data-go="profil">Lihat profil</button>
     </div>
-    <div class="stage"><span class="orbit"></span><span class="orbit o2"></span><span class="chip c1">📚</span><span class="chip c2">🎓</span><span class="chip c3">✏️</span>
+    <div class="stage"><span class="orbit"></span><span class="orbit o2"></span>
     <div class="frame" id="heroPhoto" title="Klik untuk memasang foto" tabindex="0" role="button" aria-label="Pasang foto">
       <img alt="Foto Wahyudin, S.Pd"><div class="ph"><b>W</b>Klik untuk memasang foto</div>
     </div></div>
@@ -34,6 +34,7 @@
     <div class="pn">
       <div class="avatar" id="avatar" title="Klik untuk memasang foto" tabindex="0" role="button" aria-label="Pasang foto profil"><img alt="Foto profil"><div class="ph"><b>W</b>Pasang foto</div></div>
       <h3>Wahyudin, S.Pd</h3><p>Mahasiswa PPG</p>
+      <div class="social" id="social" aria-label="Media sosial"></div>
     </div>
     <dl id="info"></dl>
   </div>
@@ -61,9 +62,13 @@
 </section>
 
 <section class="page" id="dokumentasi">
-  <h2>Dokumentasi</h2><p class="lead">Foto kegiatan PPL. Klik kotak tambah untuk memilih foto dari perangkat.</p>
-  <div class="grid" id="g-dok" style="margin-bottom:24px"></div>
-  <div class="gal" id="gal"><figure class="add" id="addPhoto" tabindex="0" role="button">+ Tambah foto</figure></div>
+  <h2>Dokumentasi</h2><p class="lead">Berkas dan video dokumentasi kegiatan PPL.</p>
+  <h3 class="gh">Kunjungan Dosen Pembimbing Lapangan</h3>
+  <div class="gal" id="gal-dpl"></div>
+  <h3 class="gh">Kegiatan Praktik Mengajar</h3>
+  <div class="gal" id="gal-ppl"></div>
+  <h3 class="gh">Video Dokumentasi</h3>
+  <div class="vids" id="vids"></div>
 </section>
 
 </main>
@@ -80,7 +85,8 @@
   </div>
 </div>
 <input type="file" id="photoIn" accept="image/*" hidden>
-<input type="file" id="galIn" accept="image/*" multiple hidden>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Penampil foto"><button class="lbx" id="lbx" aria-label="Tutup">✕</button><button class="lbn lbp" id="lbp" aria-label="Foto sebelumnya">‹</button><figure><img id="lbi" alt=""><figcaption id="lbc"></figcaption></figure><button class="lbn lbf" id="lbf" aria-label="Foto berikutnya">›</button></div>
 
 <script src="js/app.js"></script>
 </body>
