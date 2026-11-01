@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id" data-look="klasik">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<title>E-Portofolio Praktik Pengalaman Lapangan Mandiri – Wahyudin, S.Pd</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <div class="side-top">
+    <div class="brand"><span class="mark">EP</span><span class="bt">E-Portofolio<small>Praktik Pengalaman Lapangan Mandiri</small></span></div>
+    <button class="theme" id="theme" aria-label="Ganti tema">◐</button>
+    <button class="burger" id="burger" aria-label="Buka menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+  </div>
+  <nav id="nav" aria-label="Menu utama"></nav>
+  <div class="side-foot"><b>Wahyudin, S.Pd</b>SMK Negeri 3 Makassar<br>Universitas Negeri Makassar</div>
+</header>
+<main>
+
+<section class="page" id="beranda">
+  <div class="hero">
+    <div class="hero-text">
+      <span class="eyebrow">Selamat datang</span>
+      <h1>E-Portofolio Praktik Pengalaman Lapangan Mandiri</h1>
+      <p class="sub">Pendidikan Profesi Guru &middot; Wahyudin, S.Pd</p>
+      <div class="motto" id="motto">“Mengajar dengan hati, membimbing dengan teladan, menumbuhkan generasi yang berkarakter dan berdaya saing.”<small>Wahyudin, S.Pd</small></div>
+      <button class="go" data-go="profil">Lihat profil &rarr;</button>
+    </div>
+    <div class="stage">
+      <div class="frame" id="heroPhoto" title="Klik untuk memasang foto" tabindex="0" role="button" aria-label="Pasang foto">
+        <img alt="Foto Wahyudin, S.Pd"><div class="ph"><b>W</b>Klik untuk memasang foto</div>
+      </div>
+    </div>
+  </div>
+  <div class="tiles">
+    <button class="card tile" data-go="profil"><b>02</b><h3>Profil</h3><p>Identitas, dosen pembimbing, guru pamong, dan kontak</p></button>
+    <button class="card tile" data-go="terbimbing"><b>03</b><h3>Praktik Terbimbing</h3><p>Enam analisis refleksi mata kuliah</p></button>
+    <button class="card tile" data-go="uts"><b>04</b><h3>Ujian Tengah Semester</h3><p>Siklus 1: modul ajar dan video</p></button>
+    <button class="card tile" data-go="uas"><b>05</b><h3>Ujian Akhir Semester</h3><p>Siklus 2 sampai 4: modul ajar dan video</p></button>
+    <button class="card tile" data-go="rtl"><b>06</b><h3>Rencana Tindak Lanjut</h3><p>Langkah perbaikan setelah praktik mengajar</p></button>
+    <button class="card tile" data-go="dokumentasi"><b>07</b><h3>Dokumentasi</h3><p>Foto kegiatan praktik mengajar, kunjungan, dan nonmengajar</p></button>
+  </div>
+</section>
+
+<section class="page" id="profil">
+  <h2>Profil</h2><p class="lead">Identitas peserta Pendidikan Profesi Guru dan pihak yang mendampingi selama praktik.</p>
+  <div class="profile">
+    <div class="card pn">
+      <div class="cover"></div>
+      <div class="avatar" id="avatar" title="Klik untuk memasang foto" tabindex="0" role="button" aria-label="Pasang foto profil"><img alt="Foto profil"><div class="ph"><b>W</b>Pasang foto</div></div>
+      <h3>Wahyudin, S.Pd</h3><p>Mahasiswa Pendidikan Profesi Guru</p>
+      <div class="social" id="social" aria-label="Kontak"></div>
+    </div>
+    <dl id="info"></dl>
+  </div>
+</section>
+
+<section class="page" id="terbimbing">
+  <h2>Praktik Terbimbing</h2><p class="lead">Refleksi mata kuliah dari praktik mengajar mandiri.</p>
+  <div class="grid" id="g-terbimbing"></div>
+</section>
+
+<section class="page" id="uts">
+  <h2>Ujian Tengah Semester</h2><p class="lead">Produk terbaik dari praktik mengajar mandiri siklus 1.</p>
+  <div class="grid" id="g-uts"></div>
+</section>
+
+<section class="page" id="uas">
+  <h2>Ujian Akhir Semester</h2><p class="lead">Produk terbaik dari praktik mengajar mandiri siklus 2 sampai 4.</p>
+  <div class="grid" id="g-uas"></div>
+</section>
+
+<section class="page" id="rtl">
+  <h2>Rencana Tindak Lanjut</h2><p class="lead">Langkah perbaikan dan pengembangan setelah praktik mengajar mandiri berakhir.</p>
+  <div class="rtl" id="rtlBox"></div>
+  <div class="grid" id="g-rtl" style="margin-top:20px"></div>
+</section>
+
+<section class="page" id="dokumentasi">
+  <h2>Dokumentasi</h2><p class="lead">Foto kegiatan selama Praktik Pengalaman Lapangan Mandiri. Klik foto untuk memperbesar.</p>
+  <div id="galeri"></div>
+</section>
+
+<footer>© 2026 Wahyudin, S.Pd &middot; E-Portofolio Praktik Pengalaman Lapangan Mandiri</footer>
+</main>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-label="Pratinjau file">
+  <div class="box">
+    <div class="mh"><button class="x" id="close" aria-label="Tutup">✕</button></div>
+    <div class="mb" id="mb"></div>
+  </div>
+</div>
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Pratinjau foto"><button class="lbx" id="lbx" aria-label="Tutup">✕</button><button class="lbn lbp" id="lbp" aria-label="Foto sebelumnya">‹</button><figure><img id="lbi" alt=""><figcaption id="lbc"></figcaption></figure><button class="lbn lbf" id="lbf" aria-label="Foto berikutnya">›</button></div>
+<input type="file" id="photoIn" accept="image/*" hidden>
+<script src="js/app.js"></script>
+</body>
+</html>
